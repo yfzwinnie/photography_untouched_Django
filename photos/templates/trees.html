@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+      <header>
+        <a href="{% url 'index' %}" id="logo">
+          <h1 class = "title">PHOTOGRAPHY UNTOUCHED</h1>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="{% url 'trees' %}" class="selected">Gallery</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <q class="quote">Trees are the earth's endless effort to speak to the listening heaven.</q><br><p class ="quoter">- Rabindranath Tagore</p>
+      <div class="container">
+          <ul id="gallery">
+            {% for photo in photos %}
+            {% if photo.image %}
+            <li><img src='{{ photo.image.url }}'></a>
+            <p>{{ photo.description }}</p></li>
+            {% endif %}
+            {% endfor %}
+          </ul>
+      </div>
+
+{% endblock %}

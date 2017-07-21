@@ -1,0 +1,22 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://use.fontawesome.com/e38558aba7.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anaheim|IM+Fell+Great+Primer:400i|Quicksand:700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'photos/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Untouched</title>
+  </head>
+
+  <body>
+    {% block content %}
+    {% endblock content %}
+
+  </body>
+  <footer>
+    <p>&#169; Photography Untouched</p>
+  </footer>
+</html>

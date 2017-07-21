@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+      <header>
+        <a href="{% url 'index' %}" id="logo">
+          <h1 class = "title">PHOTOGRAPHY UNTOUCHED</h1>
+        </a>
+        <nav>
+          <ul>
+            <li><a href="{% url 'trees' %}">Gallery</a></li>
+            <li><a href="{% url 'about' %}" class="selected">About</a></li>
+            <li><a href="{% url 'contact' %}" >Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <section>
+          <img src= "../media/winniez.jpg" alt="Photograph of Winnie Zhang" class="profile-photo">
+          <h3>About</h3>
+          <p>Hello! Thank you for visiting Photography Untouched. I'm Winnie and I am the creator of the site.
+          <br><br>My interest in unfiltered and unedited photography started when I was in my middle school photography class. I recalled my first lesson in photography was creating a pinhole camera from a Gain laundry detergent to learn the basic mechanics behind film camera (you can make your own too. Check out this <a href="http://www.instructables.com/id/How-To-Make-A-Pinhole-Camera/">site</a>) It was simply amazing! After that, I spent an entire year learning about black and white photography. This is where my obsession with untouched photography begin! Something about being able to develop your film from start to finish fascinates me. Not to sound cheesy but I felt like the destiny of every photograph rest in my hand. The difference between a underexposed and overexposed photograph can be 1/8 second of light.
+          <br><br>
+          So what does all of that have to do with Untouched Photography? To me, it's great to be able to use filters and photo editing programs especially since under certain circumstances, it's almost impossible to replicate what our eyes sees with just the camera alone without any type of manipulation. However, I am on a quest to see just how far our camera can take us. After all, we did spend hundreds or even thousands of dollars on them right?
+          <br><br>
+          Please look around and feel free to provide feedbacks as you like. If you like what you see, check back once in a while to see what's new. I also have an <a href="https://www.instagram.com/photographyuntouched/">Instagram</a> and <a href="https://www.facebook.com/photographyuntouched/">Facebook</a> account so follow away!</p>
+        </section>
+      </div>
+
+{% endblock %}
