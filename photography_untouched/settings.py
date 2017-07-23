@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '283wjpxs7$eyq$p*2$djbw6w-ufe^_aznwavacnn*j2v*)*0ye'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1' , 'photographyuntouched.herokuapp.com']
 
@@ -131,5 +131,3 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'photography_untouched', 'mediafiles')
-print("base dir path", BASE_DIR)
-print("project_root", PROJECT_ROOT)
