@@ -55,7 +55,7 @@ ROOT_URLCONF = 'photography_untouched.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'photos', 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'photography_untouched', 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,10 +122,13 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (os.path.join(PROJECT_ROOT, 'photos', 'static', 'photos'),)
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'photography_untouched', 'static'),
+)
+
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'photos', 'mediafiles')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'photography_untouched', 'mediafiles')
 print("base dir path", BASE_DIR)
 print("project_root", PROJECT_ROOT)
