@@ -25,4 +25,5 @@ requests==2.12.4
 six==1.10.0
 virtualenv==15.1.0
 Werkzeug==0.12.2
+whitenoise==3.3.0
 wrapt==1.10.10
