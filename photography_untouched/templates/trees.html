@@ -19,7 +19,7 @@
           <ul id="gallery">
             {% for photo in photos %}
             {% if photo.image %}
-            <li><img src='{{ photo.image.url }}'></a>
+            <li><img src='{{ photo.image.url }}'>
             <p>{{ photo.description }}</p></li>
             {% endif %}
             {% endfor %}
