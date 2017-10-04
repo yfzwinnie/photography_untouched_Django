@@ -30,3 +30,10 @@ def portraits(request):
         "photos": queryset,
     }
     return render(request, "portraits.html", context)
+
+def animals(request):
+    queryset = Photo.objects.filter(category='A')
+    context = {
+        "photos": queryset,
+    }
+    return render(request, "animals.html", context)

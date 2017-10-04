@@ -12,8 +12,8 @@
             <li><a href="{% url 'contact' %}">Contact</a></li>
             <li class="dropdown"><a class="dropbtn">Gallery</a>
               <div class="dropdown-content">
-                <a href="{% url 'trees' %}" class="selected">Nature</a>
-                <a href="{% url 'city' %}">City</a>
+                <a href="{% url 'trees' %}">Nature</a>
+                <a href="{% url 'city' %}" class="selected">City</a>
                 <a href="{% url 'portraits' %}">Portraits</a>
                 <a href="{% url 'animals' %}">Animals</a>
               </div>
@@ -22,7 +22,7 @@
         </nav>
       </header>
       <div class="container">
-          <q class="quote">Trees are the earth's endless effort to speak to the listening heaven.</q><br><p class ="quoter">- Rabindranath Tagore</p>
+          <q class="quote">All animals are equal, but some animals are more equal than others.</q><br><p class ="quoter">- George Orwell</p>
           <ul id="gallery">
             {% for photo in photos %}
             {% if photo.image %}
