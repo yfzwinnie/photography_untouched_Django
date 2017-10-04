@@ -7,9 +7,16 @@
         </a>
         <nav>
           <ul>
-            <li><a href="{% url 'trees' %}">Gallery</a></li>
             <li><a href="{% url 'about' %}">About</a></li>
             <li><a href="{% url 'contact' %}" class="selected">Contact</a></li>
+            <li class="dropdown"><a class="dropbtn">Gallery</a>
+              <div class="dropdown-content">
+                <a href="{% url 'trees' %}">Nature</a>
+                <a href="{% url 'city' %}">City</a>
+                <a>Portraits</a>
+                <a>Animals</a>
+              </div>
+            </li>
           </ul>
         </nav>
       </header>

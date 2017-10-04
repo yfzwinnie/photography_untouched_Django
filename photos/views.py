@@ -11,8 +11,15 @@ def contact(request):
     return render(request, "contact.html")
 
 def trees(request):
-    queryset = Photo.objects.all()
+    queryset = Photo.objects.filter(category='N')
     context = {
         "photos": queryset,
     }
     return render(request, "trees.html", context)
+
+def city(request):
+    queryset = Photo.objects.filter(category='C')
+    context = {
+        "photos": queryset,
+    }
+    return render(request, "city.html", context)
