@@ -12,9 +12,9 @@
             <li><a href="{% url 'contact' %}">Contact</a></li>
             <li class="dropdown"><a class="dropbtn">Gallery</a>
               <div class="dropdown-content">
-                <a href="{% url 'trees' %}" class="selected">Nature</a>
+                <a href="{% url 'trees' %}">Nature</a>
                 <a href="{% url 'city' %}">City</a>
-                <a href="{% url 'portraits' %}">Portraits</a>
+                <a href="{% url 'portraits' %}" class="selected">Portraits</a>
                 <a>Animals</a>
               </div>
             </li>
@@ -22,7 +22,7 @@
         </nav>
       </header>
       <div class="container">
-          <q class="quote">Trees are the earth's endless effort to speak to the listening heaven.</q><br><p class ="quoter">- Rabindranath Tagore</p>
+          <q class="quote">The countenance is the portrait of the soul, and the eyes mark its intentions</q><br><p class ="quoter">- Marcus Tullius Cicero</p>
           <ul id="gallery">
             {% for photo in photos %}
             {% if photo.image %}

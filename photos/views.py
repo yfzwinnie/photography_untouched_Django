@@ -23,3 +23,10 @@ def city(request):
         "photos": queryset,
     }
     return render(request, "city.html", context)
+
+def portraits(request):
+    queryset = Photo.objects.filter(category='P')
+    context = {
+        "photos": queryset,
+    }
+    return render(request, "portraits.html", context)
