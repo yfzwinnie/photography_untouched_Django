@@ -629,6 +629,65 @@ nav li a.selected {
 }
 
 /**********************************
+Page: Gallery
+***********************************/
+.current_work {
+  text-align: center;
+}
+
+.mySlides {
+  display:none;
+  width:100%;
+}
+
+.left-arrow, .right-arrow, .slide-circle {
+  cursor:pointer;
+}
+
+.display-container{
+  max-width:980px;
+  margin:auto;
+  position:relative;
+}
+
+.sliders {
+  text-align:center;
+  margin-bottom:16px;
+  color:#fff;
+  position:absolute;
+  left:50%;
+  bottom:0;
+  transform:translate(-50%,0%);
+  -ms-transform:translate(-50%,0);
+  width: 90%;
+}
+
+.left-arrow {
+  float:left;
+}
+
+.right-arrow {
+  float:right
+}
+
+.arrow-hover:hover {
+  color:#757575;
+}
+
+.slide-circle {
+  height:10px;
+  width:10px;
+  display:inline-block;
+  border-radius:50%;
+  border:1px solid #ccc;
+}
+
+.current_circle, .circle-hover:hover {
+  color:#000;
+  background-color:#fff;
+}
+
+/**********************************
 Page: About
 ***********************************/
 .profile-photo {

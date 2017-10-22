@@ -1,6 +1,7 @@
 from django.db import models
 
 categories= (
+    ('G', 'Gallery'),
     ('N', 'Nature'),
     ('C', 'City'),
     ('P', 'Portraits'),
@@ -25,4 +26,4 @@ class Photo(models.Model):
         return self.title
 
     class Meta:
-        ordering = ["-timestamp"]
+        ordering = ["timestamp"]

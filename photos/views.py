@@ -10,6 +10,13 @@ def about(request):
 def contact(request):
     return render(request, "contact.html")
 
+def gallery(request):
+    queryset = Photo.objects.filter(category='G')
+    context = {
+        "photos": queryset,
+    }
+    return render(request, "gallery.html", context)
+
 def trees(request):
     queryset = Photo.objects.filter(category='N')
     context = {

@@ -10,7 +10,7 @@
           <ul>
             <li><a href="{% url 'about' %}">About</a></li>
             <li><a href="{% url 'contact' %}">Contact</a></li>
-            <li class="dropdown"><a class="dropbtn">Gallery</a>
+            <li class="dropdown"><a href="{% url 'gallery' %}" class="dropbtn">Gallery</a>
               <div class="dropdown-content">
                 <a href="{% url 'trees' %}">Nature</a>
                 <a href="{% url 'city' %}" class="selected">City</a>
