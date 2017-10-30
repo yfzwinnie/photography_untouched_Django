@@ -631,8 +631,41 @@ nav li a.selected {
 /**********************************
 Page: Gallery
 ***********************************/
+.current {
+  display: inline-block;
+  width: 100%;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin: 0 0 2% 0;
+  padding: 2px;
+}
+
 .current_work {
   text-align: center;
+  font-size: 1.6em;
+  font-weight: 800;
+  /*background-color: #000;*/
+  color:#000;
+  padding: 0;
+  margin-bottom: 0;
+  font-family: monospace;
+}
+
+.img-desc {
+  display: none;
+}
+
+img:hover + .img-desc {
+  display: block;
+  width: 180px;
+  height: 25px;
+  position:absolute;
+  left:0;
+  bottom:80%;
+  font-size: 1.1em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.80);
+  padding: 5px;
 }
 
 .mySlides {
@@ -682,7 +715,7 @@ Page: Gallery
   border:1px solid #ccc;
 }
 
-.current_circle, .circle-hover:hover {
+.w3-white, .circle-hover:hover {
   color:#000;
   background-color:#fff;
 }
