@@ -634,18 +634,19 @@ Page: Gallery
 .current {
   display: inline-block;
   width: 100%;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-  margin: 0 0 2% 0;
+  margin: 0 auto 20px auto;
   padding: 2px;
 }
 
 .current_work {
+  max-width: 980px;
+  margin: 0 auto;
+  border-top: 2px solid #4c4b4b;
+  border-bottom: 2px solid #4c4b4b;
   text-align: center;
   font-size: 1.6em;
   font-weight: 800;
-  /*background-color: #000;*/
-  color:#000;
+  color:#4c4b4b;
   padding: 0;
   margin-bottom: 0;
   font-family: monospace;
@@ -681,6 +682,14 @@ img:hover + .img-desc {
   max-width:980px;
   margin:auto;
   position:relative;
+}
+
+.slider-container {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom:0;
+  background: linear-gradient(to bottom,rgba(0,0,0,.02),rgba(0, 0, 0, 0.70));
 }
 
 .sliders {

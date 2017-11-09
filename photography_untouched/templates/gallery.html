@@ -43,14 +43,15 @@
             <span>{{photo.location}}</span>
           </div>
         {% endfor %}
-
-        <div class="sliders">
-          <div class="left-arrow arrow-hover" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="right-arrow arrow-hover" onclick="plusDivs(1)">&#10095;</div>
-          <span class="slide-circle demo circle-hover" onclick="currentDiv(1)"></span>
-          <span class="slide-circle demo circle-hover" onclick="currentDiv(2)"></span>
-          <span class="slide-circle demo circle-hover" onclick="currentDiv(3)"></span>
-          <span class="slide-circle demo circle-hover" onclick="currentDiv(4)"></span>
+        <div class="slider-container">
+          <div class="sliders">
+            <div class="left-arrow arrow-hover" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="right-arrow arrow-hover" onclick="plusDivs(1)">&#10095;</div>
+            <span class="slide-circle demo circle-hover" onclick="currentDiv(1)"></span>
+            <span class="slide-circle demo circle-hover" onclick="currentDiv(2)"></span>
+            <span class="slide-circle demo circle-hover" onclick="currentDiv(3)"></span>
+            <span class="slide-circle demo circle-hover" onclick="currentDiv(4)"></span>
+          </div>
         </div>
     </div>
     <script type="text/javascript" src="{% static 'photos/script.js' %}"></script>
