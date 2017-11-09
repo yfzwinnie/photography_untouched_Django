@@ -715,7 +715,7 @@ img:hover + .img-desc {
   border:1px solid #ccc;
 }
 
-.w3-white, .circle-hover:hover {
+.current_circle, .circle-hover:hover {
   color:#000;
   background-color:#fff;
 }
