@@ -641,7 +641,7 @@ Page: Gallery
 .current_work {
   max-width: 980px;
   margin: 0 auto;
-  border-top: 2px solid #4c4b4b;
+  border-top: 2px solid ç;
   border-bottom: 2px solid #4c4b4b;
   text-align: center;
   font-size: 1.6em;
@@ -722,6 +722,7 @@ img:hover + .img-desc {
   display:inline-block;
   border-radius:50%;
   border:1px solid #ccc;
+  transition: all .5s ease-in;
 }
 
 .current_circle, .circle-hover:hover {
@@ -759,7 +760,7 @@ Body
 ***********************************/
 body {
   font-family: 'Anaheim', sans-serif;
-  color: #000;
+  color: #4c4b4b;
   background-color: #fff;
 }
 
@@ -804,21 +805,31 @@ img {
   list-style: none;
 }
 
-#gallery li {
+#gallery div {
   float: left;
   width: 45%;
   margin: 2.5%;
-  background-color: #f5f5f5;
-  color: #bdc3c7;
+  position: relative;
+  font-size: 1.2em;
+  font-weight: 700;
 }
 
-#gallery li p {
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
-  color: #bdc3c7
+#gallery div:hover img {
+  opacity: 0.3;
 }
 
+#gallery div p {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#gallery div:hover p {
+  opacity: 1;
+}
 /**********************************
 Footer
 ***********************************/
@@ -857,11 +868,11 @@ Making the page responsive
   PAGE: PORTFOLIO
   ***********************************/
 
-  #gallery li {
+  #gallery div {
     width: 28.3333%;
   }
 
-  #gallery li:nth-child(4n) {
+  #gallery div:nth-child(4n) {
     clear: left;
   }
 
